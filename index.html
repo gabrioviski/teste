@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Fretus</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=".">
+                <img src="./assets/img/logo.png" alt="Logotipo da Fretus">
+            </a>
+        </div>
+        <nav>
+            <a href="./HTML/client.html">Sou Cliente</a>
+            <a href="#">Sou Entregador</a>
+            <div class="burguer">
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+            <div class="burguer-menu">
+                <a href="./HTML/client.html">Sou Cliente</a>
+                <a href="#">Sou Entregador</a>
+                <a href="#">FAQ</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="carousel">
+            <div class="container">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./assets/img/carrosel-1-p.png">
+                    <img src="./assets/img/carrosel-1.png" alt="Está com dúvidas? Acesse nosso FAQ!">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./assets/img/carrosel-2-p.png">
+                    <img src="./assets/img/carrosel-2.png" alt="Venha solicitar sua entrega com a gente">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="./assets/img/carrosel-3-p.png">
+                    <img src="./assets/img/carrosel-3.png" alt="Nós estamos preparados para auxiliar e te ajudar nas suas entregas!">
+                </picture>
+            </div>
+            <div class="nav-button">
+                <input type="radio" name="nav" id="n1" data-index="0" checked>
+                <label for="n1"></label>
+                <input type="radio" name="nav" id="n2" data-index="1">
+                <label for="n2"></label>
+                <input type="radio" name="nav" id="n3" data-index="2">
+                <label for="n3"></label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="faq">
+            <div class="info-faq">
+                <p>Não conseguiu entender a nossa ideia? Não conseguiu entender como as entregas funcionam? Não conseguiu entender como se tornar um agregados e entregar com a gente? Não se preocupe, o nosso FAQ responde essas e mais perguntas.</p>
+                <p>Clique no botão abaixo e acesse o nosso FAQ :)</p>
+            </div>
+            <div class="button-faq"><a href="#">Acessar o FAQ</a></div>
+        </section>
+        <section class="info">
+            <ul>
+                <li><a href="#">Créditos</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Protótipo Axure</a></li>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Pitch</a></li>
+                <li><a href="#">Requisitos Funcionais, Não-Funcionais e Regras de Negócio</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./JS/carousel.js"></script>
+    <script src="./JS/burguer.js"></script>
+</body>
+</html>
